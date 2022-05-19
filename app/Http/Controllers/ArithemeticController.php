@@ -35,11 +35,11 @@ class ArithemeticController extends Controller
         return view(
             "calc",
             [
-                'Titulo' => $title,
-                'Sign' => $Sign,
+                'title' => $title,
+                'sign' => $Sign,
                 'n1' => $n1,
                 'n2' => $n2,
-                'Resultado' => $result
+                'result' => $result
             ]
         );
     }
