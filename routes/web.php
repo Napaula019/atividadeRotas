@@ -37,6 +37,6 @@ Route::get('/Usuarios/{nome?}', function ($nome) {
 })->where("nome", "[A-Za-z]+");
 
 
-Route::get('/{op}/{n1}/{n2}', 'App\Http\Controllers\Controller@calc')
+Route::get('/{op}/{n1}/{n2}', 'App\Http\Controllers\ArithemeticController@calc')
     ->whereIn('op', ['soma', 'sub', 'div'])
     ->where(["n1" => "[0-9]+", "n2" => "[0-9]+"]);

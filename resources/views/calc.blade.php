@@ -10,7 +10,8 @@
 
 <body>
     <h1>Calculadora</h1>
-    <p> @{{$result}}. </p>
+    <h2> {!! $title !!} </h2>
+    <p> {!! $n1 !!} {!! $n2 !!} {!! $sign !!} = {!! $result !!} </p>
 </body>
 
 </html>
